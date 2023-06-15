@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;1,300;1,400;1,500;1,600;1,700&family=Nunito:wght@200;300;400;500;600;700;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,20 +9,45 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: "Nunito", sans-serif !important;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
+.service-card {
+  padding: 41px 39px;
+  background: linear-gradient(180deg, #36363e 0%, #292930 100%);
+  border: 1px solid #424245;
+  border-radius: 30px;
+}
+
+.read-more-btn {
+  background-color: #ffdc60;
+  padding: 17px 70px 18px;
+}
+
+.process-container {
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    111.05deg,
+    #e9f7ff 9.66%,
+    #ffdbd5 57.52%,
+    #fff3ca 103.42%
+  );
+  border-radius: 10px;
+}
+
+.nav_btn {
+  box-shadow: 0px 10px 12px rgba(198, 198, 198, 0.25);
+}
+
+.testimonial-card {
+  background: linear-gradient(151.16deg, #fff8f8 10.38%, #f5f7ff 95.44%);
+  padding: 32px 26px;
+  border-radius: 7px;
 }
