@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function Navbar() {
@@ -12,7 +13,7 @@ function Navbar() {
             <a href="#">Home</a>
           </li>
           <li>
-            <a href="/about">About</a>
+            <Link href="/about">About</Link>
           </li>
           <li>
             <a href="#">Blog</a>
