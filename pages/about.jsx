@@ -14,28 +14,17 @@ function WorkStatCard() {
   );
 }
 
-function TeamCard() {
+function TeamCard({ image, name, position }) {
   return (
     <div className="team-card py-6 px-5 border rounded-md transition-all cursor-pointer">
       <div className="team-card-content">
-        <div className="team-card-image w-fulll">
-          <img
-            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80"
-            alt=""
-          />
+        <div className="team-card-image w-full h-[344px]">
+          <img src={image} alt="" className="w-full h-full object-cover" />
         </div>
         <div className="team-card-footer flex flex-col items-center py-6">
           <div className="card-line w-[90px] h-1 border bg-blue-600 mb-3"></div>
-          <h2 className="text-3xl font-bold">Pippa Clarkson</h2>
-          <p>Lead Manager</p>
-          <div className="team-social-handler flex items-center justify-center gap-6 mt-6">
-            <a href="#">
-              <BsFacebook className="text-blue-700" />
-            </a>
-            <a href="#">
-              <FaTwitter className="text-blue-300" />
-            </a>
-          </div>
+          <h2 className="text-3xl font-bold">{name}</h2>
+          <p>{position}</p>
         </div>
       </div>
     </div>
@@ -73,19 +62,15 @@ export default function Home() {
     >
       <Navbar />
 
-      <section className="hero-section flex items-center justify-center relative">
-        <div className="hero-section-content relative z-10 overflow-hidden">
-          <div className="w-[325px] h-[325px] md:w-[650px] md:h-[650px] bg-white relative rounded-full -bottom-10">
-            <img
-              src="/mesh.svg"
-              alt="mesh"
-              className="hidden md:block absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
-            />
-            <h2 className="text-3xl md:text-6xl absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] font-semibold">
-              About <span className="text-[#5956E8]">us</span>
-            </h2>
-          </div>
-        </div>
+      <section className="hero-section flex items-center justify-center relative h-[575px] w-full bg-white relative">
+        <h2 className="text-3xl md:text-6xl absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] font-semibold z-50">
+          Our <span className="text-[#5956E8]">Blog</span>
+        </h2>
+        <img
+          src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80"
+          alt=""
+          className="w-full h-full object-cover absolute inset-0"
+        />
       </section>
 
       <section className="work-stats py-32 xl:px-32 bg-black z-50">
@@ -154,9 +139,26 @@ export default function Home() {
           <h1 className="text-3xl">Our team of expert marketers</h1>
         </div>
         <div className="team-card-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 w-[90%] mx-auto">
-          <TeamCard />
-          <TeamCard />
-          <TeamCard />
+          <TeamCard
+            image={"./ayush.jpeg"}
+            name={"Ayush Bhatnagar"}
+            position={"Founder/ CEO"}
+          />
+          <TeamCard
+            image={"./aditya.jpeg"}
+            name={"Aditya Jain"}
+            position={"Head Developer"}
+          />
+          <TeamCard
+            image={"./aman.jpeg"}
+            name="Aman Singh"
+            position={"Marketing Head"}
+          />
+          <TeamCard
+            image={"./garima.jpeg"}
+            name="Garima Yadav"
+            position={"Head Content Planner"}
+          />
         </div>
       </section>
 
