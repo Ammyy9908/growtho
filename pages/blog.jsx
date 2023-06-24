@@ -4,27 +4,30 @@ import Navbar from "@/components/navbar";
 import React, { useState } from "react";
 import blogs from "@/data/blogs";
 import { BiChevronRight } from "react-icons/bi";
+import Link from "next/link";
 
-function PostCard({ thumb, title, description }) {
+function PostCard({ thumb, title, description, link }) {
   return (
-    <div className="post-card shadow-md">
-      <div className="post-card-content">
-        <div className="post-card-image h-[244px] ">
-          <img
-            src={thumb}
-            alt=""
-            className="w-full h-full object-cover rounded-md"
-          />
-        </div>
-        <div className="post-card-text-content py-3 px-3">
-          <div className="post-card-header">
-            <h1 className="font-semibold text-xl">{title}</h1>
-            <span>September 1, 2022</span>
+    <Link href={link}>
+      <div className="post-card shadow-md">
+        <div className="post-card-content">
+          <div className="post-card-image h-[244px] ">
+            <img
+              src={thumb}
+              alt=""
+              className="w-full h-full object-cover rounded-md"
+            />
           </div>
-          <h2 className="text-sm text-black/50 mt-3">{description}</h2>
+          <div className="post-card-text-content py-3 px-3">
+            <div className="post-card-header">
+              <h1 className="font-semibold text-xl">{title}</h1>
+              <span>September 1, 2022</span>
+            </div>
+            <h2 className="text-sm text-black/50 mt-3">{description}</h2>
+          </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 function Blog() {
@@ -44,7 +47,7 @@ function Blog() {
       <Navbar />
       <section className="hero-section flex items-center justify-center relative h-[575px] w-full bg-white relative">
         <h2 className="text-3xl md:text-6xl absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] font-semibold z-50">
-          Our <span className="text-[#5956E8]">Blog</span>
+          Our <span className="text-[#5956E8]">Blogs</span>
         </h2>
         <img
           src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80"
@@ -52,7 +55,7 @@ function Blog() {
           className="w-full h-full object-cover absolute inset-0"
         />
       </section>
-      <section className="article-section py-32 px-32">
+      <section className="article-section py-32 px-8 md:px-32">
         <div className="article-section-content">
           <div className="article-section-header">
             <div className="article-heading-content flex items-start gap-8">
@@ -66,7 +69,7 @@ function Blog() {
             </div>
           </div>
           <div className="article-blog py-12 px-10 bg-[#FFF3CA] my-12 shadow-xl">
-            <div className="article-blog-content grid grid-cols-2 gap-16">
+            <div className="article-blog-content grid grid-cols-1 md:grid-cols-2 gap-16">
               <div className="article-blog-text-content w-full">
                 <div className="article-blog-header w-full flex items-start justify-between">
                   <span className="tag font-bold">Marketing</span>
@@ -103,9 +106,8 @@ function Blog() {
           </div>
         </div>
       </section>
-      <Newsletter />
 
-      <section className="post-section py-32 px-32">
+      <section className="post-section py-32 px-8 md:px-32">
         <div className="post_section_container">
           <div className="post_section_header flex items-center justify-between">
             <h1>Latest Posts</h1>
@@ -156,7 +158,7 @@ function Blog() {
               </ul>
             </div>
           </div>
-          <div className="post-cards mt-12 grid grid-cols-3 gap-16">
+          <div className="post-cards mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16">
             {filteredBlogs.length > 0
               ? filteredBlogs.map((blog, index) => {
                   return (
@@ -165,6 +167,9 @@ function Blog() {
                       thumb={blog.thumb}
                       title={blog.title}
                       description={blog.short_description}
+                      link={`/posts/${blog.published_on.split("-")[0]}/${
+                        blog.published_on.split("-")[1]
+                      }/${blog.published_on.split("-")[2]}/${blog.slug}`}
                     />
                   );
                 })
@@ -175,6 +180,9 @@ function Blog() {
                       thumb={blog.thumb}
                       title={blog.title}
                       description={blog.short_description}
+                      link={`/posts/${blog.published_on.split("-")[0]}/${
+                        blog.published_on.split("-")[1]
+                      }/${blog.published_on.split("-")[2]}/${blog.slug}`}
                     />
                   );
                 })}
