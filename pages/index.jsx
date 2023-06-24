@@ -1,7 +1,7 @@
 import Navbar from "@/components/navbar";
 import ServiceCard from "@/components/serviceCard";
 import TestimonialCard from "@/components/testimonialCard";
-import { Inter } from "next/font/google";
+import services from "@/data/services";
 import { BiChevronRight } from "react-icons/bi";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -70,27 +70,20 @@ export default function Home() {
             <h3 className="text-3xl max-w-[675px]">
               High-impact services to take your business to the next level
             </h3>
-            <a
-              href="#"
-              className="px-4 py-2 bg-white rounded-md text-black flex items-center justify-center gap-2 shadow-2xl"
-            >
-              <span> Our Services</span>
-              <span className="w-4 h-4 bg-blue-600 text-white rounded-full">
-                <BiChevronRight />
-              </span>
-            </a>
           </div>
 
           <div className="service-grid w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 my-12">
-            <ServiceCard
-              title={"Social Media Marketing"}
-              Icon={"/mobile.png"}
-            />
-            <ServiceCard title={"Paid Advertising"} Icon={"/mobile.png"} />
-            <ServiceCard title={"Advanced Analytics"} Icon={"/mobile.png"} />
-            <ServiceCard title={"SEO Optimization"} Icon={"/mobile.png"} />
-            <ServiceCard title={"Funnel Optimization"} Icon={"/mobile.png"} />
-            <ServiceCard title={"Condent Marketing"} Icon={"/mobile.png"} />
+            {services.map((s) => {
+              return (
+                <ServiceCard
+                  key={s.id}
+                  title={s.title}
+                  description={s.description}
+                  Icon={s.thumb}
+                  page={s.index}
+                />
+              );
+            })}
           </div>
         </div>
       </section>

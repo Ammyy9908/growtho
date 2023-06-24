@@ -21,7 +21,6 @@ a {
 }
 
 .service-card {
-  padding: 41px 39px;
   background: linear-gradient(180deg, #36363e 0%, #292930 100%);
   border: 1px solid #424245;
   border-radius: 30px;
