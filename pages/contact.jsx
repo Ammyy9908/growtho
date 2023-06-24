@@ -1,8 +1,10 @@
 import FAQ from "@/components/FAQ";
 import Newsletter from "@/components/Newsletter/Newsletter";
+import Popup from "@/components/Popup";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
-import React from "react";
+import axios from "axios";
+import React, { useState } from "react";
 import { AiFillMail } from "react-icons/ai";
 
 function FormControl({ label, type, value, setValue, placeholder, name, id }) {
@@ -16,6 +18,8 @@ function FormControl({ label, type, value, setValue, placeholder, name, id }) {
         type={type}
         placeholder={placeholder}
         className="w-full h-12 px-5"
+        value={value}
+        onChange={(e) => setValue(e.target.value)}
       />
     </div>
   );
@@ -49,12 +53,43 @@ function ContactCard() {
   );
 }
 
-function contact() {
+function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [company, setCompany] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [sented, setSented] = useState(false);
+
+  const handleContact = async () => {
+    console.log(name, email, company, subject, message);
+
+    try {
+      const r = await axios.post(`/api/contact`, {
+        name,
+        email,
+        company,
+        subject,
+        message,
+      });
+      console.log(r);
+      if (r.data["message"]) {
+        setSented(true);
+        setName("");
+        setEmail("");
+        setMessage("");
+        setSubject("");
+        setCompany("");
+      }
+    } catch (e) {
+      console.log(e);
+    }
+  };
   return (
     <div className="w-full h-screen">
       <Navbar />
       <section className="hero-section flex items-center justify-center relative h-[575px] w-full bg-white relative">
-        <h2 className="text-3xl md:text-6xl absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] font-semibold z-50">
+        <h2 className="text-3xl md:text-6xl absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] font-semibold z-20">
           Contact <span className="text-[#5956E8]">us</span>
         </h2>
         <img
@@ -92,6 +127,8 @@ function contact() {
               placeholder={"Full Name"}
               type={"text"}
               label="Full Name"
+              value={name}
+              setValue={setName}
             />
             <FormControl
               id="email"
@@ -99,6 +136,8 @@ function contact() {
               placeholder={"Your Email"}
               type={"email"}
               label="Your Email"
+              value={email}
+              setValue={setEmail}
             />
             <FormControl
               id="company"
@@ -106,6 +145,8 @@ function contact() {
               placeholder={"Company"}
               type={"text"}
               label="Company"
+              value={company}
+              setValue={setCompany}
             />
             <FormControl
               id="subject"
@@ -113,6 +154,8 @@ function contact() {
               placeholder={"Subject"}
               type={"text"}
               label="Subject"
+              value={subject}
+              setValue={setSubject}
             />
           </div>
           <div className="form-control-bigger w-full mt-12 flex flex-col items-start gap-3">
@@ -125,20 +168,29 @@ function contact() {
               rows="10"
               className="w-full resize-none py-3 px-5"
               placeholder="Hello there,I would like to talk about how to..."
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
             ></textarea>
           </div>
           <div className="w-full flex items-center justify-center my-12">
-            <button className="w-[193px] bg-black h-[61px] mx-auto rounded-md text-white">
+            <button
+              className={`w-[193px] ${
+                !name || !email || !subject || !company || !message
+                  ? "bg-black/50"
+                  : "bg-black"
+              } h-[61px] mx-auto rounded-md text-white`}
+              onClick={handleContact}
+            >
               Send Message
             </button>
           </div>
         </div>
       </section>
-      <Newsletter />
       <FAQ />
       <Footer />
+      {sented && <Popup setSented={setSented} />}
     </div>
   );
 }
 
-export default contact;
+export default Contact;
