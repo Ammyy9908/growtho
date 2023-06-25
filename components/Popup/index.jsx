@@ -3,7 +3,7 @@ import { MdClear } from "react-icons/md";
 function Popup({ setSented }) {
   return (
     <div className="w-full h-screen fixed bg-black/50  inset-0 flex items-center justify-center z-50 ">
-      <div className="popup-body relative bg-white py-12 px-16 flex flex-col items-center rounded-md">
+      <div className="popup-body relative bg-white py-12 px-4 md:px-16 flex flex-col items-center rounded-md">
         <div className="popup-top">
           <div>
             <img src="/MailIcon.svg" alt="mail-icon" />

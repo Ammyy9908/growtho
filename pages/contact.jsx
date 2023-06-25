@@ -25,29 +25,23 @@ function FormControl({ label, type, value, setValue, placeholder, name, id }) {
   );
 }
 
-function ContactCard() {
+function ContactCard({ title, description, link }) {
   return (
-    <div
-      className="contact-card px-6 py-3 rounded-md"
-      style={{
-        background:
-          "linear-gradient(111.05deg, #E9F7FF 9.66%, #FFDBD5 57.52%, #FFF3CA 103.42%)",
-      }}
-    >
-      <div className="contact-card-box bg-white py-12 px-6 shadow-xl rounded-md">
-        <div className="contact-card-chip px-4 py-2 bg-yellow-500 max-w-[90px] rounded-full mb-6">
-          <p>Contact</p>
+    <div className="contact-card px-6 py-3 rounded-md">
+      <div className="contact-card-box bg-white py-12 px-6 rounded-md">
+        <div className="contact-card-chip">
+          <p className="text-3xl font-bold">{title}</p>
         </div>
         <hr />
-        <div className="contact-card-footer mt-3 flex items-start gap-6">
-          <div className="contact-card-icon">
-            <AiFillMail />
-          </div>
-          <div className="contact-card-heading">
-            <h3>Phone</h3>
-            <a href="#">nextlevel@marketing.com</a>
-          </div>
-        </div>
+        <p>{description}</p>
+        {link && (
+          <a
+            href={link}
+            className="px-3 py-2 bg-yellow-400 flex w-[130px] items-center justify-center rounded-md font-bold mt-3"
+          >
+            Visit
+          </a>
+        )}
       </div>
     </div>
   );
@@ -107,10 +101,46 @@ function Contact() {
           <h1 className="text-2xl">Let’s build something awesome together</h1>
         </div>
 
-        <div className="contact-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
-          <ContactCard />
-          <ContactCard />
-          <ContactCard />
+        <div className="contact-cards grid grid-cols-1  lg:grid-cols-2 gap-8">
+          <ContactCard
+            title={"Call Us"}
+            description="Please Feel Free to Contact Us , We are happy to assist You.Click to call us and Get immediate Solution to your problem."
+            link={"tel:7339991461"}
+          />
+          <ContactCard
+            title={"Business Enquirers"}
+            description={
+              "Call us as we will Clear All your Quires and Respond to all enquirers. We are thankful to you to give as the opportunity."
+            }
+            link={"tel:7339991461"}
+          />
+          <ContactCard
+            title={"Email"}
+            description={
+              "Don't Hesitate to mail us, we will respond with in 24 Hours surly.We are glad you are Mailing us."
+            }
+            link={"mailto:contactgrowtho@gmail.com"}
+          />
+          <ContactCard
+            title={"Whatsapp"}
+            description={
+              "We are also available on Whatsapp for you ease. We are flexible for our Client Ease but Strict with Work Dead line."
+            }
+            link={"https://wa.me/917339991461"}
+          />
+          <ContactCard
+            title={"Social Media"}
+            description={
+              "We are also available on Instagram & other Social Media Handel for you ease.Also Check Out Our Social Media Handel."
+            }
+            link={"https://www.instagram.com/growtho.in/"}
+          />
+          <ContactCard
+            title={"Opening Hours"}
+            description={
+              "Business Days - MONDAY TO SATURDAY Business Hours 9 Am To 7 PM."
+            }
+          />
         </div>
 
         <div
@@ -186,7 +216,7 @@ function Contact() {
           </div>
         </div>
       </section>
-      <FAQ />
+      {/* <FAQ /> */}
       <Footer />
       {sented && <Popup setSented={setSented} />}
     </div>
