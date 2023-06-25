@@ -1,10 +1,11 @@
+import Link from "next/link";
 import React from "react";
 
 function Footer() {
   return (
     <footer className="py-12 px-3 sm:px-16 lg:px-32 bg-[#292930]">
       <div className="footer text-white grid lg:grid-cols-3 gap-12">
-        <div className="subscribe-box lg:col-span-1 bg-[#3C3C45] px-6 py-8 rounded-md">
+        {/* <div className="subscribe-box lg:col-span-1 bg-[#3C3C45] px-6 py-8 rounded-md">
           <div className="subscribe-box-content">
             <div className="company-logo">
               <a href="#" className="text-2xl font-bold text-center">
@@ -30,7 +31,7 @@ function Footer() {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="footer-content lg:col-span-2">
           <div className="footer-address-bar grid grid-cols-2 gap-12">
             <div className="address-box-1 flex flex-col items-start gap-3">
@@ -41,9 +42,9 @@ function Footer() {
                 <span>Get in touch with</span>
               </div>
               <a href="#" className="px-2 py-3 bg-[#3C3C45] rounded-md">
-                +1 917 000 1212
+                +91 73399 91461
               </a>
-              <p> nextlevel@marketing.com</p>
+              <p>ContactGrowthO@gmail.com</p>
             </div>
             <div className="address-box-2">
               <div className="address-header flex items-center gap-3">
@@ -60,72 +61,21 @@ function Footer() {
           <div className="footer-features grid grid-cols-3 gap-3 my-12">
             <div className="site-pages">
               <div className="feature-title">
-                <h3>Pages</h3>
+                <h3 className="font-bold text-xl">Links</h3>
               </div>
               <div className="feature-links">
                 <ul>
                   <li>
-                    <a href="#">Home</a>
+                    <Link href="/">Home</Link>
                   </li>
                   <li>
-                    <a href="#">about</a>
+                    <Link href="/about">about</Link>
                   </li>
                   <li>
-                    <a href="#">Blog</a>
+                    <Link href="/blog">Blog</Link>
                   </li>
                   <li>
-                    <a href="#">Contact</a>
-                  </li>
-                  <li>
-                    <a href="#">Services</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="site-pages">
-              <div className="feature-title">
-                <h3>Utility Pages</h3>
-              </div>
-              <div className="feature-links">
-                <ul>
-                  <li>
-                    <a href="#">Home</a>
-                  </li>
-                  <li>
-                    <a href="#">about</a>
-                  </li>
-                  <li>
-                    <a href="#">Blog</a>
-                  </li>
-                  <li>
-                    <a href="#">Contact</a>
-                  </li>
-                  <li>
-                    <a href="#">Services</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="site-pages">
-              <div className="feature-title">
-                <h3>Follows</h3>
-              </div>
-              <div className="feature-links">
-                <ul>
-                  <li>
-                    <a href="#">Home</a>
-                  </li>
-                  <li>
-                    <a href="#">about</a>
-                  </li>
-                  <li>
-                    <a href="#">Blog</a>
-                  </li>
-                  <li>
-                    <a href="#">Contact</a>
-                  </li>
-                  <li>
-                    <a href="#">Services</a>
+                    <Link href="/contact">Contact</Link>
                   </li>
                 </ul>
               </div>
@@ -133,8 +83,7 @@ function Footer() {
           </div>
           <div className="footer-copyright">
             <p>
-              Copyright © Nextlevel | Designed by VictorFlow - Powered by
-              Webflow
+              Copyright © 2023 Growtho | Designed by Sumit - Powered by Growtho
             </p>
           </div>
         </div>
