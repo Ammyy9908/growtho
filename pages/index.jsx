@@ -12,6 +12,7 @@ import { useCallback, useRef } from "react";
 import Footer from "@/components/footer";
 
 import { Autoplay, Pagination, Navigation } from "swiper";
+import Link from "next/link";
 
 export default function Home() {
   const sliderRef = useRef(null);
@@ -34,7 +35,7 @@ export default function Home() {
     >
       <Navbar />
 
-      <section className="hero_section w-[75%] mx-auto py-32 grid md:grid-cols-2 gap-16">
+      <section className="hero_section w-[85%] mx-auto py-32 grid md:grid-cols-2 gap-16">
         <div className="hero-section-content flex flex-col items-start gap-6">
           <h1 className="text-6xl font-semibold">
             A fully integrated digital{" "}
@@ -45,12 +46,12 @@ export default function Home() {
             reprehendunt ius ex. Ut vis mazim erroribus forensibus.
           </p>
           <div className="hero-controls flex items-center gap-6">
-            <a
-              href="#"
+            <Link
+              href="/services"
               className="px-3 py-2 text-white bg-[#292930] rounded-md"
             >
               Our Sevices
-            </a>
+            </Link>
             <a
               href="#"
               className="px-3 py-2 text-black  border-2 border-[#292930] rounded-md"

@@ -33,7 +33,7 @@ function Footer() {
           </div>
         </div> */}
         <div className="footer-content lg:col-span-2">
-          <div className="footer-address-bar grid grid-cols-2 gap-12">
+          <div className="footer-address-bar grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="address-box-1 flex flex-col items-start gap-3">
               <div className="address-header flex items-center gap-2">
                 <span>
@@ -41,7 +41,10 @@ function Footer() {
                 </span>
                 <span>Get in touch with</span>
               </div>
-              <a href="#" className="px-2 py-3 bg-[#3C3C45] rounded-md">
+              <a
+                href="tel:+917339991461"
+                className="px-2 py-3 bg-[#3C3C45] rounded-md"
+              >
                 +91 73399 91461
               </a>
               <p>ContactGrowthO@gmail.com</p>
@@ -53,8 +56,7 @@ function Footer() {
                 </span>
                 <span>Location</span>
               </div>
-              <p>10 Suna House 65 Rivington Street London EC2A 3QQ</p>
-              <p> location</p>
+              <p className="mt-3">Mathura,Uttar Pradesh</p>
             </div>
           </div>
           <hr className="my-6" />
