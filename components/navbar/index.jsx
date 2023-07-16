@@ -3,7 +3,7 @@ import React from "react";
 import { HiMenu } from "react-icons/hi";
 function Navbar() {
   return (
-    <div className="navbar w-[95%] lg:w-[85%] mx-auto flex items-center justify-between py-6 z-50 bg-white">
+    <div className="navbar w-[95%] lg:w-[85%] mx-auto flex items-center justify-between py-6 z-5">
       <Link href="/" className="text-xl md:text-3xl font-bold">
         GrowthO
       </Link>
