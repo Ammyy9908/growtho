@@ -55,7 +55,7 @@ function Blog() {
           className="w-full h-full object-cover absolute inset-0"
         />
       </section>
-      <section className="article-section py-32 px-8 md:px-32">
+      {/* <section className="article-section py-32 px-8 md:px-32">
         <div className="article-section-content">
           <div className="article-section-header">
             <div className="article-heading-content flex items-start gap-8">
@@ -105,7 +105,7 @@ function Blog() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="post-section py-32 px-8 md:px-32">
         <div className="post_section_container">

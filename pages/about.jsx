@@ -2,6 +2,7 @@ import Navbar from "@/components/navbar";
 import { BsFacebook } from "react-icons/bs";
 import Footer from "@/components/footer";
 import { FaTwitter } from "react-icons/fa";
+import Link from "next/link";
 function WorkStatCard() {
   return (
     <div className="work-stat-card flex items-center gap-6">
@@ -18,8 +19,15 @@ function TeamCard({ image, name, position }) {
   return (
     <div className="team-card py-6 px-5 border rounded-md transition-all cursor-pointer">
       <div className="team-card-content">
-        <div className="team-card-image w-full h-[344px]">
-          <img src={image} alt="" className="w-full h-full object-cover" />
+        <div className="team-card-image w-[344px] md:w-full h-[344px] group overflow-hidden">
+          <img
+            src={image}
+            alt=""
+            className="w-full h-full object-cover group-hover:scale-90 transition-all group-hover:border-8 border-white"
+            style={{
+              transitionDuration: "1s",
+            }}
+          />
         </div>
         <div className="team-card-footer flex flex-col items-center py-6">
           <div className="card-line w-[90px] h-1 border bg-blue-600 mb-3"></div>
@@ -54,33 +62,28 @@ function LocationCard() {
 }
 export default function Home() {
   return (
-    <main
-      className="w-full h-screen bg-[#D9D9D9]"
-      style={{
-        background: ` linear-gradient(111.23deg, #F9F6DA 9.95%, #E2D5FF 85.17%);`,
-      }}
-    >
+    <main className="w-full h-screen">
       <Navbar />
 
-      <section className="hero-section flex items-center justify-center relative h-[575px] w-full bg-white relative">
-        <h2 className="text-3xl md:text-6xl absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] font-semibold z-50">
-          Our <span className="text-[#5956E8]">Blog</span>
+      <section className="hero-section flex items-center justify-center relative h-[310px] sm:h-[375px] md:h-[575px] w-full bg-white relative">
+        <h2 className="text-3xl md:text-6xl absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] font-semibold z-50 text-white">
+          About <span className="text-[#5956E8]">Us</span>
         </h2>
         <img
-          src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80"
+          src="/team.jpg"
           alt=""
           className="w-full h-full object-cover absolute inset-0"
         />
       </section>
 
-      <section className="work-stats py-32 xl:px-32 bg-black z-50">
+      {/* <section className="work-stats py-32 xl:px-32 bg-black z-50">
         <div className="work-stat-container text-white  flex flex-col xl:flex-row items-center justify-between gap-32 mx-auto">
           <WorkStatCard />
           <WorkStatCard />
           <WorkStatCard />
           <WorkStatCard />
         </div>
-      </section>
+      </section> */}
 
       <section className="about-section w-full py-16">
         <div className="about-section-box w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-16 items-center">
@@ -88,15 +91,13 @@ export default function Home() {
             <img src="/about.svg" alt="about" />
           </div>
           <div className="about-section-content">
-            <div className="about-section-header flex items-start gap-6 py-6">
+            <div className="about-section-header flex flex-col items-center md:flex-row md:items-start gap-6 py-6">
               <div className="header-icon w-12 h-12 bg-yellow-300 rounded-full flex items-center justify-center">
                 @
               </div>
               <div className="header-title">
                 <h3 className="text-xs uppercase text-black/50">01.About us</h3>
-                <h1 className="text-3xl">
-                  The #1 digital marketing services company
-                </h1>
+                <h1 className="text-3xl">Free Consultancy For Everyone</h1>
               </div>
             </div>
             <hr />
@@ -115,17 +116,22 @@ export default function Home() {
               </div>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-              cum architecto alias sint magnam eum quod in commodi voluptatum
-              aliquam, animi impedit, quis eius incidunt inventore fugiat qui
-              laborum mollitia.
+              Growth O has the best team of five people who are excellent and
+              absolutely flawless in their respective fields, have different
+              outlooks and abilities, and are at different stages of their
+              careers. Conjoined efforts of each team member has led to
+              favourable outcomes in such a short span of time. Since, GrowthO
+              has made it’s principal grail towards it’s team members is
+              amiable, motivating, engaging each individuals. Even a small
+              initiative by a team member is seeing as a new opportunity for
+              GrowthO to make it best.
             </p>
-            <a
-              href="#"
-              className="px-4 py-3 border border-black flex max-w-[130px] rounded-md mt-6"
+            <Link
+              href="/services"
+              className="px-2 py-3 bg-blue-500 w-[170px] block text-center rounded-full mt-3 text-white"
             >
-              Get in touch
-            </a>
+              Our Services
+            </Link>
           </div>
         </div>
       </section>
@@ -159,10 +165,30 @@ export default function Home() {
             name="Garima Yadav"
             position={"Head Content Planner"}
           />
+          <TeamCard
+            image={"./darshita.jpeg"}
+            name="Darshita Gupta"
+            position={"Head Content Planner"}
+          />
+          <TeamCard
+            image={"./tisha.jpeg"}
+            name="Tisha Agrawal"
+            position={"Head Content Designer"}
+          />
+          <TeamCard
+            image={"./apoorva.jpeg"}
+            name="Apoorva Khurana"
+            position={"Content Creator & Mentor"}
+          />
+          <TeamCard
+            image={"./deepakshi.jpeg"}
+            name="Deepakshi Rajput"
+            position={"Content Designer"}
+          />
         </div>
       </section>
 
-      <section
+      {/* <section
         className="location-section py-32"
         style={{
           background:
@@ -190,6 +216,28 @@ export default function Home() {
             <LocationCard />
             <LocationCard />
             <LocationCard />
+          </div>
+        </div>
+      </section> */}
+
+      <section className="company-policy-section py-16 px-16">
+        <div className="policy-section-content grid grid-cols-2 gap-32">
+          <div className="policy">
+            <h3 className="text-center text-3xl">Our Service Policy</h3>
+            <p className="text-black/50 mt-3">
+              Discount gives are based on terms & Conditions. Charges may
+              increase or fluctuate according with mutual consideration. 50 %
+              Amount to be Paid in advance & rest after completion of work(Term
+              period).
+            </p>
+          </div>
+          <div className="values">
+            <h3 className="text-center text-3xl">Our Core Values</h3>
+            <p className="text-black/50 mt-3">
+              100 percent truthfulness & Loyalty with Clients. Trust &
+              Completion of work on time is what we emphasis on. GrowthO’s Motto
+              is Your Growth.
+            </p>
           </div>
         </div>
       </section>
