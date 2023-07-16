@@ -19,7 +19,7 @@ function TeamCard({ image, name, position }) {
   return (
     <div className="team-card py-6 px-5 border rounded-md transition-all cursor-pointer">
       <div className="team-card-content">
-        <div className="team-card-image w-[344px] md:w-full h-[344px] group overflow-hidden">
+        <div className="team-card-image w-full h-[344px] group overflow-hidden">
           <img
             src={image}
             alt=""
@@ -65,7 +65,7 @@ export default function Home() {
     <main className="w-full h-screen">
       <Navbar />
 
-      <section className="hero-section flex items-center justify-center relative h-[310px] sm:h-[375px] md:h-[575px] w-full bg-white relative">
+      <section className="hero-section flex items-center justify-center relative h-[310px] sm:h-[375px] md:h-[575px] w-full bg-gray-400/20 relative ">
         <h2 className="text-3xl md:text-6xl absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] font-semibold z-50 text-white">
           About <span className="text-[#5956E8]">Us</span>
         </h2>
@@ -146,7 +146,7 @@ export default function Home() {
         </div>
         <div className="team-card-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 w-[90%] mx-auto">
           <TeamCard
-            image={"./ayush.jpeg"}
+            image={"./Ayush.jpeg"}
             name={"Ayush Bhatnagar"}
             position={"Founder/ CEO"}
           />
@@ -221,7 +221,7 @@ export default function Home() {
       </section> */}
 
       <section className="company-policy-section py-16 px-16">
-        <div className="policy-section-content grid grid-cols-2 gap-32">
+        <div className="policy-section-content grid grid-cols-1 md:grid-cols-2 gap-32">
           <div className="policy">
             <h3 className="text-center text-3xl">Our Service Policy</h3>
             <p className="text-black/50 mt-3">

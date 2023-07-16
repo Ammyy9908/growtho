@@ -52,7 +52,7 @@ function Blog() {
   return (
     <div className="h-screen">
       <Navbar />
-      <section className="hero-section flex items-center justify-center relative h-[475px] md:h-[575px] w-full bg-white relative">
+      <section className="hero-section flex items-center justify-center relative h-[475px] md:h-[575px] w-full bg-gray-400/20 relative">
         <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-50 text-center text-white w-full md:w-[75%]">
           <h2 className="text-white text-xl sm:text-3xl md:text-6xl font-semibold z-50">
             {blog ? blog.title : ""}

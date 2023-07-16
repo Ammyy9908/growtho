@@ -9,7 +9,7 @@ function Services() {
       <Navbar />
 
       <section className="hero-section flex items-center justify-center relative h-[275px] md:h-[575px] w-full bg-white relative">
-        <h2 className="text-3xl md:text-6xl absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] font-semibold z-50">
+        <h2 className="text-3xl md:text-6xl absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] font-semibold z-20">
           Our <span className="text-[#5956E8]">Services</span>
         </h2>
         <img

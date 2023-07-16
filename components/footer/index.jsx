@@ -47,7 +47,9 @@ function Footer() {
               >
                 +91 73399 91461
               </a>
-              <p>ContactGrowthO@gmail.com</p>
+              <a href="mailto:GrowthO@gmail.com">
+                <p>GrowthO@gmail.com</p>
+              </a>
             </div>
             <div className="address-box-2">
               <div className="address-header flex items-center gap-3">
