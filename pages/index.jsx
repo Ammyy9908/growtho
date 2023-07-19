@@ -37,13 +37,14 @@ export default function Home() {
 
       <section className="hero_section w-[85%] mx-auto py-32 grid md:grid-cols-2 gap-16">
         <div className="hero-section-content flex flex-col items-start gap-6">
-          <h1 className="text-6xl font-semibold">
-            A fully integrated digital{" "}
-            <span className="text-[#5956E8]">marketing</span> agency
+          <h1 className="text-3xl md:text-4xl lg:text-6xl font-semibold">
+            Get Your Business Visible to Your Audience.
+            {/* <span className="text-[#5956E8]">marketing</span> agency */}
           </h1>
           <p>
-            Lorem ipsum dolor sit amet, ea mundi malorum cum, ocurreret
-            reprehendunt ius ex. Ut vis mazim erroribus forensibus.
+            Boost your sale by reaching right Audience. Having a Website for
+            your Business, is as important as having Aadhar Card. Get your
+            business Recognized by your audience.
           </p>
           <div className="hero-controls flex items-center gap-6">
             <Link
@@ -53,10 +54,10 @@ export default function Home() {
               Our Sevices
             </Link>
             <a
-              href="#"
+              href="/contact"
               className="px-3 py-2 text-black  border-2 border-[#292930] rounded-md"
             >
-              Get Started
+              Contact
             </a>
           </div>
         </div>
@@ -90,54 +91,29 @@ export default function Home() {
       </section>
 
       <section className="process-section py-32">
-        <div className="container w-[85%] mx-auto grid grid-cols-1 lg:grid-cols-2">
-          <div>
-            <img src="/mobile.svg" alt="mobile-image" />
+        <div className="container w-[85%] mx-auto  flex flex-col text-center items-center justify-center">
+          <div className="w-[230px] h-[230px] mb-8">
+            <img src="/7@4x.png" alt="growtho-image" />
           </div>
           <div>
             <h3 className="text-3xl">
               The #1 digital marketing services company
             </h3>
-            <p className="text-black/50">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry ftyuu Ipsum has been the industry`s standard book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting.
+            <p className="text-black/50 my-2">
+              Boost your sale by reaching right Audience. Having a Website for
+              your Business, is as important as having Aadhar Card. Get your
+              business Recognized by your audience.
             </p>
 
-            <ul className="flex flex-col items-start gap-12 my-12">
-              <li>
-                <div className="flex flex-col md:flex-row items-start gap-12">
-                  <div className="process-icon w-16 h-16  rounded-full flex items-center justify-center shadow-2xl border-2 border-black">
-                    <img src="/tv.png" alt="tv-image" />
-                  </div>
-                  <div className="process-content">
-                    <h3 className="text-xl">Guaranteed Results</h3>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="flex flex-col md:flex-row items-start gap-12">
-                  <div className="process-icon w-16 h-16 shadow-2xl rounded-full flex items-center justify-center border-2 border-black">
-                    <img src="/group.png" alt="tv-image" />
-                  </div>
-                  <div className="process-content">
-                    <h3 className="text-xl">Guaranteed Results</h3>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
+            <p className="text-black/50">
+              Growtho dedicates it’s service to clients, helping them to
+              succeed. We scrutinize work as an opportunity and lend our hands
+              to incipient. What makes you grow over digitally, is the guidance
+              you need from us.
+            </p>
           </div>
         </div>
-
+        {/* 
         <div className="process-container w-[85%] mx-auto py-12">
           <div className="w-full">
             <p className="uppercase text-center">03.Process</p>
@@ -193,89 +169,87 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="testimonial-container w-[85%] mx-auto py-12">
-          <div className="testimonial-header flex flex-col gap-12 md:flex-row items-start justify-between">
-            <div className="flex items-center gap-12">
-              <div className="testimonial-bubble">
-                <img src="/bubble.svg" alt="chat-bubble" />
-              </div>
-
-              <div className="testimonial-header-content">
-                <p className="uppercase text-sm text-black/50">
-                  04.Testimonial
-                </p>
-                <h3 className="text-3xl font-bold">
-                  We work with customers across all industries
-                </h3>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-6">
-              <button
-                className="prev-arrow w-12 h-12 bg-[#454545] flex items-center justify-center rounded-full text-white"
-                onClick={handlePrev}
-              >
-                <BsChevronLeft />
-              </button>
-              <button
-                className="next-arrow w-12 h-12 bg-[#ffffff] shadow-2xl nav_btn rounded-full flex items-center justify-center"
-                onClick={handleNext}
-              >
-                <BsChevronRight />
-              </button>
-            </div>
-          </div>
-          <div className="testimonials my-12">
-            <Swiper
-              className="mySwiper"
-              ref={sliderRef}
-              spaceBetween={12}
-              autoplay={{
-                delay: 3500,
-                disableOnInteraction: true,
-              }}
-              modules={[Autoplay]}
-              slidesPerView={1}
-              breakpoints={{
-                768: {
-                  // width: 768,
-                  slidesPerView: 2,
-                },
-              }}
-            >
-              <SwiperSlide>
-                <TestimonialCard />
-              </SwiperSlide>
-              <SwiperSlide>
-                {" "}
-                <TestimonialCard />
-              </SwiperSlide>
-              <SwiperSlide>
-                {" "}
-                <TestimonialCard />
-              </SwiperSlide>
-              <SwiperSlide>
-                {" "}
-                <TestimonialCard />
-              </SwiperSlide>
-              <SwiperSlide>
-                {" "}
-                <TestimonialCard />
-              </SwiperSlide>
-              <SwiperSlide>
-                {" "}
-                <TestimonialCard />
-              </SwiperSlide>
-              <SwiperSlide>
-                {" "}
-                <TestimonialCard />
-              </SwiperSlide>
-            </Swiper>
-          </div>
-        </div>
+        </div> */}
       </section>
+
+      <div className="testimonial-container w-[85%] mx-auto py-12">
+        <div className="testimonial-header flex flex-col gap-12 md:flex-row items-start justify-between">
+          <div className="flex items-center gap-12">
+            <div className="testimonial-bubble">
+              <img src="/bubble.svg" alt="chat-bubble" />
+            </div>
+
+            <div className="testimonial-header-content">
+              <p className="uppercase text-sm text-black/50">Clients</p>
+              <h3 className="text-3xl font-bold">What our client says?</h3>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-6">
+            <button
+              className="prev-arrow w-12 h-12 bg-[#454545] flex items-center justify-center rounded-full text-white"
+              onClick={handlePrev}
+            >
+              <BsChevronLeft />
+            </button>
+            <button
+              className="next-arrow w-12 h-12 bg-[#ffffff] shadow-2xl nav_btn rounded-full flex items-center justify-center"
+              onClick={handleNext}
+            >
+              <BsChevronRight />
+            </button>
+          </div>
+        </div>
+        <div className="testimonials my-12">
+          <Swiper
+            className="mySwiper"
+            ref={sliderRef}
+            spaceBetween={12}
+            autoplay={{
+              delay: 3500,
+              disableOnInteraction: true,
+            }}
+            modules={[Autoplay]}
+            slidesPerView={1}
+            breakpoints={{
+              768: {
+                // width: 768,
+                slidesPerView: 2,
+              },
+            }}
+          >
+            <SwiperSlide>
+              <TestimonialCard
+                name="Handuja"
+                comment={
+                  "I really appreciate your work. Website you made for us is very attractive and nice. Even the logo you designed for us was so good. I liked your service , in future if i needed anyone i will definitely contact you again."
+                }
+                logo="/handuja-bakers-full-logo-transparent-1.png"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              {" "}
+              <TestimonialCard
+                name="Loco High"
+                comment={
+                  "Variety of services are provided here, and they never disappoint us because of their splendid work. Best Work at Cheap Cost, Happy with Reasonable Price ."
+                }
+                logo="/Coco-High-1.jpg"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              {" "}
+              <TestimonialCard
+                name="Samridhi Jewellers"
+                comment={
+                  "I am very happy with their work, very helpful team very Supportive. Always On-Time, all Demands satisfyingly Done. I also got more client for them because of Team's Amazing Work."
+                }
+                logo="/IMG-20210125-WA0009.jpg"
+              />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </div>
 
       <Footer />
     </main>

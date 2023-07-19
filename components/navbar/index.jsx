@@ -34,7 +34,7 @@ function Navbar() {
       >
         <HiMenu />
         <div
-          className="mobile-nav min-w-[170px] bg-white px-3 py-6 bg-whiite shadow-md absolute z-50 right-6 top-5 rounded-md scale-0 group-hover:scale-100 transition-all"
+          className="mobile-nav min-w-[170px] bg-white px-3 py-6 bg-whiite shadow-md absolute z-50 right-6 top-5 rounded-md scale-0 group-focus:scale-100 transition-all"
           style={{
             transformOrigin: "top right",
           }}
