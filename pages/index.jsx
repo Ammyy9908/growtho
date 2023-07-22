@@ -53,12 +53,12 @@ export default function Home() {
             >
               Our Sevices
             </Link>
-            <a
+            <Link
               href="/contact"
               className="px-3 py-2 text-black  border-2 border-[#292930] rounded-md"
             >
               Contact
-            </a>
+            </Link>
           </div>
         </div>
         <div className="hidden md:flex hero-section-graphic">
