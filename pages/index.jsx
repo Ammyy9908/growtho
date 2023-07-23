@@ -27,17 +27,12 @@ export default function Home() {
     sliderRef.current.swiper.slideNext();
   }, []);
   return (
-    <main
-      className="w-full h-screen bg-[#D9D9D9]"
-      style={{
-        background: `linear-gradient(111.23deg, #E9F7FF 9.95%, #FFDBD5 85.17%)`,
-      }}
-    >
+    <main className="w-full h-screen">
       <Navbar />
 
       <section className="hero_section w-[85%] mx-auto py-32 grid md:grid-cols-2 gap-16">
         <div className="hero-section-content flex flex-col items-start gap-6">
-          <h1 className="text-3xl md:text-4xl lg:text-6xl font-semibold">
+          <h1 className="text-2xl md:text-4xl lg:text-6xl font-semibold">
             Get Your Business Visible to Your Audience.
             {/* <span className="text-[#5956E8]">marketing</span> agency */}
           </h1>
@@ -62,7 +57,7 @@ export default function Home() {
           </div>
         </div>
         <div className="hidden md:flex hero-section-graphic">
-          <img src="/banner.svg" alt="" />
+          <img src="/illsutration.svg" alt="" />
         </div>
       </section>
 
