@@ -30,7 +30,7 @@ export default function Home() {
     <main className="w-full h-screen">
       <Navbar />
 
-      <section className="hero_section w-[85%] mx-auto py-32 grid md:grid-cols-2 gap-16 items-center">
+      <section className="hero_section w-[85%] mx-auto py-8 grid md:grid-cols-2 gap-16 items-center">
         <div className="hero-section-content flex flex-col items-start gap-6">
           <h1 className="text-2xl md:text-4xl lg:text-6xl font-semibold">
             Get Your Business Visible to Your Audience.
@@ -85,16 +85,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="process-section py-32">
-        <div className="container w-[85%] md:w-[45%] mx-auto  flex flex-col text-center items-center justify-center">
-          <div className="w-[230px] h-[230px] mb-8">
+      <section className="process-section py-16">
+        <div className="container w-[90%] lg:w-[75%] mx-auto  flex flex-col text-center items-center justify-center">
+          <div className="w-[230px] h-[230px]">
             <img src="/7@4x.png" alt="growtho-image" />
           </div>
-          <div>
-            <h3 className="text-4xl font-semibold">
+          <div className="mt-6">
+            <h3 className="text-md sm:text-2xl md:text-3xl lg:text-5xl font-semibold">
               The #1 digital marketing services company
             </h3>
-            <p className="text-black/50 my-2">
+            <p className="text-black/50 my-2 text-md md:text-xl">
               Boost your sale by reaching right Audience. Having a Website for
               your Business, is as important as having Aadhar Card. Get your
               business Recognized by your audience. Growtho dedicates it’s

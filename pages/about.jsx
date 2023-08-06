@@ -87,7 +87,7 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section className="about-section w-full py-16">
+      <section className="about-section w-full py-4">
         <div className="about-section-box w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-16 items-center">
           <div className="about-section-image">
             <img src="/about.svg" alt="about" />
@@ -138,8 +138,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="team-section mb-16">
-        <div className="section-header w-[90%] mx-auto flex flex-col items-center my-16 gap-6">
+      <section className="team-section mb-4">
+        <div className="section-header w-[90%] mx-auto flex flex-col items-center my-8 gap-6">
           <p>OUR TEAM</p>
         </div>
         <div className="team-card-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 w-[90%] mx-auto">
