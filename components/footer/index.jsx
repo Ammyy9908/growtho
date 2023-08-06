@@ -3,7 +3,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="py-12 px-3 sm:px-16 lg:px-32 bg-[#292930]">
+    <footer className="py-12 px-3 sm:px-16 lg:px-32 bg-[#292930] relative">
       <div className="footer text-white grid lg:grid-cols-3 gap-12">
         {/* <div className="subscribe-box lg:col-span-1 bg-[#3C3C45] px-6 py-8 rounded-md">
           <div className="subscribe-box-content">
@@ -62,6 +62,12 @@ function Footer() {
               <p className="mt-3">Pune,Maharastra</p>
               <p className="mt-3">Mehsana,Gujarat</p>
             </div>
+
+            <img
+              src="/footer_graphic.png"
+              alt=""
+              className="absolute -right-16 top-5 hidden md:block"
+            />
           </div>
           <hr className="my-6" />
           <div className="footer-features grid grid-cols-3 gap-3 my-12">
