@@ -98,7 +98,9 @@ function Contact() {
             <img src="/hand.svg" alt="handshake-icon" />
           </div>
           <p className="text-sm uppercase text-black/50">Contact us</p>
-          <h1 className="text-2xl">Let’s build something awesome together</h1>
+          <h1 className="text-2xl md:text-4xl">
+            Let’s build something awesome together
+          </h1>
         </div>
 
         <div className="contact-cards grid grid-cols-1  lg:grid-cols-2 gap-8">
