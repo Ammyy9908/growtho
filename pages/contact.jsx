@@ -94,9 +94,6 @@ function Contact() {
       </section>
       <section className="contact-section bg-white py-12 px-2 md:px-32">
         <div className="section-header my-16 flex flex-col items-center gap-6 ">
-          <div className="header-icon w-16 h-16 bg-purple-400 flex items-center justify-center px-3 rounded-full">
-            <img src="/hand.svg" alt="handshake-icon" />
-          </div>
           <p className="text-sm uppercase text-black/50">Contact us</p>
           <h1 className="text-2xl md:text-4xl">
             Let’s build something awesome together
