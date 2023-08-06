@@ -3,7 +3,7 @@ import React from "react";
 import { HiMenu } from "react-icons/hi";
 function Navbar() {
   return (
-    <div className="navbar w-[95%] lg:w-[90%] mx-auto flex items-center justify-between py-6 z-5">
+    <div className="navbar w-[95%] lg:w-[90%] mx-auto flex items-center justify-between py-3 z-5">
       <Link href="/" className="text-xl md:text-3xl font-bold">
         <img src="/brand-logo.jpeg" alt="" className="w-[210px]" />
       </Link>
@@ -59,7 +59,9 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link href="/services">Our Services</Link>
+              <Link href="/services" className="font-bold">
+                Our Services
+              </Link>
             </li>
             <li>
               <Link href="/contact" className="font-bold">
