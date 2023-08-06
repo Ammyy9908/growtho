@@ -19,6 +19,9 @@ function Navbar() {
             <Link href="/blog">Blogs</Link>
           </li>
           <li>
+            <Link href="/services">Our Services</Link>
+          </li>
+          <li>
             <Link
               href="/contact"
               className="contact bg-[#292930] px-3 py-3 text-white rounded-md shadow-xl"
@@ -54,6 +57,9 @@ function Navbar() {
               <Link href="/blog" className="font-bold">
                 Blogs
               </Link>
+            </li>
+            <li>
+              <Link href="/services">Our Services</Link>
             </li>
             <li>
               <Link href="/contact" className="font-bold">
