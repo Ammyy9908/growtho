@@ -30,7 +30,7 @@ export default function Home() {
     <main className="w-full h-screen">
       <Navbar />
 
-      <section className="hero_section w-[85%] mx-auto py-32 grid md:grid-cols-2 gap-16">
+      <section className="hero_section w-[85%] mx-auto py-32 grid md:grid-cols-2 gap-16 items-center">
         <div className="hero-section-content flex flex-col items-start gap-6">
           <h1 className="text-2xl md:text-4xl lg:text-6xl font-semibold">
             Get Your Business Visible to Your Audience.
@@ -57,7 +57,7 @@ export default function Home() {
           </div>
         </div>
         <div className="hidden md:flex hero-section-graphic">
-          <img src="/illsutration.svg" alt="" />
+          <img src="/home-illustration.png" alt="" />
         </div>
       </section>
 
