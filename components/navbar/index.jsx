@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div className="navbar w-[95%] lg:w-[85%] mx-auto flex items-center justify-between py-6 z-5">
       <Link href="/" className="text-xl md:text-3xl font-bold">
-        GrowthO
+        <img src="/brand-logo.jpeg" alt="" className="w-[110px]" />
       </Link>
       <nav className="hidden md:block">
         <ul className="flex items-center justify-start gap-12">
@@ -13,10 +13,10 @@ function Navbar() {
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/about">About</Link>
+            <Link href="/about">About Us</Link>
           </li>
           <li>
-            <Link href="/blog">Blog</Link>
+            <Link href="/blog">Blogs</Link>
           </li>
           <li>
             <Link
@@ -52,7 +52,7 @@ function Navbar() {
             </li>
             <li>
               <Link href="/blog" className="font-bold">
-                Blog
+                Blogs
               </Link>
             </li>
             <li>

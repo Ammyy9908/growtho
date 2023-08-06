@@ -140,11 +140,7 @@ export default function Home() {
 
       <section className="team-section mb-16">
         <div className="section-header w-[90%] mx-auto flex flex-col items-center my-16 gap-6">
-          <div className="section-icon w-12 h-12 bg-purple-300 flex items-center justify-center rounded-full px-3">
-            <img src="/hand.svg" alt="handshake-icon" />
-          </div>
-          <p>03 . OUR TEAM</p>
-          <h1 className="text-3xl">Our team of expert marketers</h1>
+          <p>OUR TEAM</p>
         </div>
         <div className="team-card-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 w-[90%] mx-auto">
           <TeamCard

@@ -56,9 +56,11 @@ function Footer() {
                 <span>
                   <img src="/location.svg" alt="pin-icon" />
                 </span>
-                <span>Location</span>
+                <span>Locations</span>
               </div>
               <p className="mt-3">Mathura,Uttar Pradesh</p>
+              <p className="mt-3">Pune,Maharastra</p>
+              <p className="mt-3">Mehsana,Gujarat</p>
             </div>
           </div>
           <hr className="my-6" />
