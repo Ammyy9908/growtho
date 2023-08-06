@@ -118,7 +118,7 @@ export default function Home() {
               </div>
             </div>
             <p>
-              Growth O has the best team of five people who are excellent and
+              GrowthO has the best team of five people who are excellent and
               absolutely flawless in their respective fields, have different
               outlooks and abilities, and are at different stages of their
               careers. Conjoined efforts of each team member has led to

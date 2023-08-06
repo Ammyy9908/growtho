@@ -86,25 +86,21 @@ export default function Home() {
       </section>
 
       <section className="process-section py-32">
-        <div className="container w-[85%] mx-auto  flex flex-col text-center items-center justify-center">
+        <div className="container w-[85%] md:w-[45%] mx-auto  flex flex-col text-center items-center justify-center">
           <div className="w-[230px] h-[230px] mb-8">
             <img src="/7@4x.png" alt="growtho-image" />
           </div>
           <div>
-            <h3 className="text-3xl">
+            <h3 className="text-4xl font-semibold">
               The #1 digital marketing services company
             </h3>
             <p className="text-black/50 my-2">
               Boost your sale by reaching right Audience. Having a Website for
               your Business, is as important as having Aadhar Card. Get your
-              business Recognized by your audience.
-            </p>
-
-            <p className="text-black/50">
-              Growtho dedicates it’s service to clients, helping them to
-              succeed. We scrutinize work as an opportunity and lend our hands
-              to incipient. What makes you grow over digitally, is the guidance
-              you need from us.
+              business Recognized by your audience. Growtho dedicates it’s
+              service to clients, helping them to succeed. We scrutinize work as
+              an opportunity and lend our hands to incipient. What makes you
+              grow over digitally, is the guidance you need from us.
             </p>
           </div>
         </div>
