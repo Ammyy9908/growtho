@@ -46,13 +46,13 @@ function Blog() {
     <div className="w-full">
       <Navbar />
       <section className="hero-section flex items-center justify-center relative h-[575px] w-full bg-gray-400/20 relative">
-        <h2 className="text-3xl md:text-6xl absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] font-semibold z-50">
+        {/* <h2 className="text-3xl md:text-6xl absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] font-semibold z-50">
           Our <span className="text-[#5956E8]">Blogs</span>
-        </h2>
+        </h2> */}
         <img
-          src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80"
-          alt=""
-          className="w-full h-full object-cover absolute inset-0"
+          src="/blogs.png"
+          alt="Blog Graphic"
+          className="w-full h-full  absolute inset-0"
         />
       </section>
       {/* <section className="article-section py-32 px-8 md:px-32">
@@ -164,7 +164,7 @@ function Blog() {
                   return (
                     <PostCard
                       key={index}
-                      thumb={blog.thumb}
+                      thumb={"http://via.placeholder.com/640x360"}
                       title={blog.title}
                       description={blog.short_description}
                       link={`/posts/${blog.published_on.split("-")[0]}/${
@@ -177,7 +177,7 @@ function Blog() {
                   return (
                     <PostCard
                       key={index}
-                      thumb={blog.thumb}
+                      thumb={"http://via.placeholder.com/640x360"}
                       title={blog.title}
                       description={blog.short_description}
                       link={`/posts/${blog.published_on.split("-")[0]}/${

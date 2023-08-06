@@ -65,14 +65,16 @@ export default function Home() {
     <main className="w-full h-screen">
       <Navbar />
 
-      <section className="hero-section flex items-center justify-center relative h-[310px] sm:h-[375px] md:h-[575px] w-full bg-gray-400/20 relative ">
-        <h2 className="text-3xl md:text-6xl absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] font-semibold z-50 text-white">
-          About <span className="text-[#5956E8]">Us</span>
-        </h2>
+      <section
+        className="hero-section flex items-center justify-center relative h-[310px] sm:h-[375px] md:h-[575px] w-full bg-[rgb(233,222,254)] relative "
+        style={{
+          background: `linear-gradient(122deg, rgba(233,222,254,1) 0%, rgba(206,249,242,1) 97%)`,
+        }}
+      >
         <img
-          src="/team.jpg"
+          src="/about.png"
           alt=""
-          className="w-full h-full object-cover absolute inset-0"
+          className="w-full h-full   absolute inset-0"
         />
       </section>
 
