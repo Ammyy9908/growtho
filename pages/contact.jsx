@@ -27,12 +27,12 @@ function FormControl({ label, type, value, setValue, placeholder, name, id }) {
 
 function ContactCard({ title, description, link }) {
   return (
-    <div className="contact-card px-6 py-3 rounded-md">
-      <div className="contact-card-box bg-white py-12 px-6 rounded-md">
-        <div className="contact-card-chip">
+    <div className="contact-card py-3 rounded-md">
+      <div className="contact-card-box bg-white py-2 px-1 rounded-md">
+        <div className="contact-card-chi mb-3">
           <p className="text-3xl font-bold">{title}</p>
         </div>
-        <hr />
+        <hr className="mb-2" />
         <p>{description}</p>
         {link && (
           <a
@@ -82,7 +82,7 @@ function Contact() {
   return (
     <div className="w-full h-screen">
       <Navbar />
-      <section className="hero-section flex items-center justify-center relative h-[575px] w-full bg-white relative">
+      <section className="hero-section flex items-center justify-center relative h-[275px] md:h-[575px] w-full bg-white">
         {/* <h2 className="text-3xl md:text-6xl absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] font-semibold z-20">
           Contact <span className="text-[#5956E8]">us</span>
         </h2> */}
@@ -92,7 +92,7 @@ function Contact() {
           className="w-full h-full  absolute inset-0"
         />
       </section>
-      <section className="contact-section bg-white py-12 px-6 md:px-32">
+      <section className="contact-section bg-white py-12 px-2 md:px-32">
         <div className="section-header my-16 flex flex-col items-center gap-6 ">
           <div className="header-icon w-16 h-16 bg-purple-400 flex items-center justify-center px-3 rounded-full">
             <img src="/hand.svg" alt="handshake-icon" />

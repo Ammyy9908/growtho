@@ -45,7 +45,7 @@ function Blog() {
   return (
     <div className="w-full">
       <Navbar />
-      <section className="hero-section flex items-center justify-center relative h-[575px] w-full bg-gray-400/20 relative">
+      <section className="hero-section flex items-center justify-center  h-[275px] w-full bg-gray-400/20 relative">
         {/* <h2 className="text-3xl md:text-6xl absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] font-semibold z-50">
           Our <span className="text-[#5956E8]">Blogs</span>
         </h2> */}
@@ -109,7 +109,7 @@ function Blog() {
 
       <section className="post-section py-32 px-8 md:px-32">
         <div className="post_section_container">
-          <div className="post_section_header flex items-center justify-between">
+          <div className="post_section_header flex flex-col gap-3 md:flex-row items-center justify-between">
             <h1>Latest Posts</h1>
             <div className="post-tags">
               <ul className="w-full flex items-center gap-6">

@@ -66,7 +66,7 @@ export default function Home() {
       <Navbar />
 
       <section
-        className="hero-section flex items-center justify-center relative h-[310px] sm:h-[375px] md:h-[575px] w-full bg-[rgb(233,222,254)] relative "
+        className="hero-section flex items-center justify-center  h-[275px]  sm:h-[375px] md:h-[575px] w-full bg-[rgb(233,222,254)] relative "
         style={{
           background: `linear-gradient(122deg, rgba(233,222,254,1) 0%, rgba(206,249,242,1) 97%)`,
         }}
