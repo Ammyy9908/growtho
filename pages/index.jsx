@@ -13,6 +13,7 @@ import Footer from "@/components/footer";
 
 import { Autoplay, Pagination, Navigation } from "swiper";
 import Link from "next/link";
+import VideoTestimonial from "@/components/VideoTestimonial";
 
 export default function Home() {
   const sliderRef = useRef(null);
@@ -64,12 +65,12 @@ export default function Home() {
       <section className="service-section bg-[#292930] py-32">
         <div className="container w-[85%] mx-auto">
           <div className="section-header text-white flex flex-col lg:flex-row items-start lg:items-center justify-between gap-12">
-            <h3 className="text-3xl max-w-[675px]">
+            <h3 className="text-3xl w-full text-center">
               High-impact services to take your business to the next level
             </h3>
           </div>
 
-          <div className="service-grid w-full grid grid-cols-1 md:grid-cols-2  gap-16 my-12">
+          <div className="service-grid w-full grid grid-cols-1 md:grid-cols-3  gap-16 my-12">
             {services.map((s) => {
               return (
                 <ServiceCard
@@ -241,6 +242,18 @@ export default function Home() {
           </Swiper>
         </div>
       </div>
+
+      <section className="video-testimonials w-[85%] mx-auto py-12">
+        <h2 className="text-center text-2xl font-semibold">
+          Listen from our Clients
+        </h2>
+
+        <div className="video-testimonials-cards w-full grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
+          <VideoTestimonial source="/videos/1.mp4" />
+          <VideoTestimonial source="/videos/2.mp4" />
+          <VideoTestimonial source="/videos/3.mp4" />
+        </div>
+      </section>
 
       <Footer />
     </main>

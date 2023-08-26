@@ -139,10 +139,10 @@ export default function Home() {
       </section>
 
       <section className="team-section mb-4">
-        <div className="section-header w-[90%] mx-auto flex flex-col items-center my-8 gap-6">
+        <div className="section-header w-[85%] mx-auto flex flex-col items-center my-8 gap-6">
           <p>OUR TEAM</p>
         </div>
-        <div className="team-card-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 w-[90%] mx-auto">
+        <div className="team-card-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 w-[85%] mx-auto">
           <TeamCard
             image={"./Ayush.jpeg"}
             name={"Ayush Bhatnagar"}
@@ -218,7 +218,7 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section className="company-policy-section py-16 px-16">
+      <section className="company-policy-section py-16  w-[85%] mx-auto">
         <div className="policy-section-content grid grid-cols-1 md:grid-cols-2 gap-32">
           <div className="policy">
             <h3 className="text-center text-3xl">Our Service Policy</h3>

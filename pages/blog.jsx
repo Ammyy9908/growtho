@@ -166,7 +166,11 @@ function Blog() {
                       key={index}
                       thumb={"http://via.placeholder.com/640x360"}
                       title={blog.title}
-                      description={blog.short_description}
+                      description={
+                        blog.short_description.length > 120
+                          ? blog.short_description.slice(0, 90) + "..."
+                          : blog.description
+                      }
                       link={`/posts/${blog.published_on.split("-")[0]}/${
                         blog.published_on.split("-")[1]
                       }/${blog.published_on.split("-")[2]}/${blog.slug}`}
@@ -179,7 +183,11 @@ function Blog() {
                       key={index}
                       thumb={"http://via.placeholder.com/640x360"}
                       title={blog.title}
-                      description={blog.short_description}
+                      description={
+                        blog.short_description.length > 120
+                          ? blog.short_description.slice(0, 90) + "..."
+                          : blog.description
+                      }
                       link={`/posts/${blog.published_on.split("-")[0]}/${
                         blog.published_on.split("-")[1]
                       }/${blog.published_on.split("-")[2]}/${blog.slug}`}
