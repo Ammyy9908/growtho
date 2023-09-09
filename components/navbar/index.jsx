@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div className="navbar w-[95%] lg:w-[90%] mx-auto flex items-center justify-between py-3 z-5">
       <Link href="/" className="text-xl md:text-3xl font-bold">
-        <img src="/brand-logo.jpeg" alt="" className="w-[210px]" />
+        <img src="/brand-logo.jpeg" alt="GrowthO" className="w-[210px]" />
       </Link>
       <nav className="hidden md:block">
         <ul className="flex items-center justify-start gap-12">

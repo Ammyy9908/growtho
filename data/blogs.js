@@ -5,7 +5,7 @@ const blogs = [
     id: "1",
     title: "Digital Marketing",
     published_on: "12-1-2020",
-    thumb: "https://growtho.in/wp-content/uploads/2020/12/31958-1-scaled.jpg",
+    thumb: "/31958-1-scaled.jpg",
     related_posts: ["4", "2", "3"],
     short_description:
       "Digital marketing refers to advertising delivered through digital channels such as search engines, websites, social media, email, and mobile apps.",
@@ -99,7 +99,7 @@ const blogs = [
   {
     id: "2",
     title: "Social Media Marketing",
-    thumb: "https://growtho.in/wp-content/uploads/2020/12/3401222-scaled.jpg",
+    thumb: "/3401222-scaled.jpg",
     published_on: "12-01-2020",
     short_description:
       "Social media marketing involves creating and sharing content on socialmedia platforms to connect with your audience to build your brand.",
@@ -198,7 +198,7 @@ const blogs = [
   },
   {
     id: "3",
-    thumb: "https://growtho.in/wp-content/uploads/2020/11/logopic1.png",
+    thumb: "/logopic1.png",
     title: "The Role of SEO in Digital Marketing: Best Practices and Tips",
 
     related_posts: ["4", "1", "2"],
@@ -306,7 +306,7 @@ const blogs = [
   {
     id: "4",
     title: "Search Engine Optimization",
-    thumb: "https://growtho.in/wp-content/uploads/2020/11/19199749-scaled.jpg",
+    thumb: "/19199749-scaled.jpg",
     published_on: "12-01-2020",
     related_posts: ["3", "1", "2"],
     short_description:

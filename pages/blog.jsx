@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import blogs from "@/data/blogs";
 import { BiChevronRight } from "react-icons/bi";
 import Link from "next/link";
+import { NextSeo } from "next-seo";
 
 function PostCard({ thumb, title, description, link }) {
   return (
@@ -43,16 +44,37 @@ function Blog() {
     setFilteredBlogs(filtered);
   };
   return (
-    <div className="w-full">
+    <main className="w-full">
+      <NextSeo
+        title="Digital Marketing Insights and Tips - Growtho Blogs"
+        description="Dive deep into the world of digital marketing with Growtho Blogs. From the latest trends to actionable insights, our blog posts are crafted to equip you with the knowledge to steer your business to success. Stay ahead in the game with expert advice and tips from the Growtho team, your trusted partner in digital growth."
+        openGraph={{
+          title: "Digital Marketing Insights and Tips - Growtho Blogs",
+          description:
+            "Dive deep into the world of digital marketing with Growtho Blogs. From the latest trends to actionable insights, our blog posts are crafted to equip you with the knowledge to steer your business to success. Stay ahead in the game with expert advice and tips from the Growtho team, your trusted partner in digital growth.",
+          url: "https://www.growtho.co/blogs",
+          images: [
+            {
+              url: "/31958-1-scaled.jpg",
+              width: 800,
+              height: 600,
+              alt: "GrwothO Digital Marketing",
+            },
+          ],
+        }}
+      />
       <Navbar />
       <section className="hero-section flex items-center justify-center  h-[275px] md:h-[475px] w-full bg-gray-400/20 relative">
         {/* <h2 className="text-3xl md:text-6xl absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] font-semibold z-50">
           Our <span className="text-[#5956E8]">Blogs</span>
         </h2> */}
+        {
+          //add a perfect alt attribute to below image
+        }
         <img
           src="/blogs.png"
-          alt="Blog Graphic"
           className="w-full h-full  absolute inset-0"
+          alt="Growtho Blogs"
         />
       </section>
       {/* <section className="article-section py-32 px-8 md:px-32">
@@ -164,7 +186,7 @@ function Blog() {
                   return (
                     <PostCard
                       key={index}
-                      thumb={"http://via.placeholder.com/640x360"}
+                      thumb={blog.thumb}
                       title={blog.title}
                       description={
                         blog.short_description.length > 120
@@ -181,7 +203,7 @@ function Blog() {
                   return (
                     <PostCard
                       key={index}
-                      thumb={"http://via.placeholder.com/640x360"}
+                      thumb={blog.thumb}
                       title={blog.title}
                       description={
                         blog.short_description.length > 120
@@ -198,7 +220,7 @@ function Blog() {
         </div>
       </section>
       <Footer />
-    </div>
+    </main>
   );
 }
 

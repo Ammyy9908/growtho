@@ -5,7 +5,7 @@ import services from "@/data/services";
 import { BiChevronRight } from "react-icons/bi";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import seoConfig from "@/configs/seoConfig";
 import "swiper/css";
 import "swiper/css/navigation";
 import { useCallback, useRef } from "react";
@@ -14,6 +14,7 @@ import Footer from "@/components/footer";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import Link from "next/link";
 import VideoTestimonial from "@/components/VideoTestimonial";
+import { NextSeo } from "next-seo";
 
 export default function Home() {
   const sliderRef = useRef(null);
@@ -29,6 +30,13 @@ export default function Home() {
   }, []);
   return (
     <main className="w-full h-screen">
+      <NextSeo
+        title={seoConfig.title}
+        description={seoConfig.description}
+        openGraph={seoConfig.openGraph}
+        twitter={seoConfig.twitter}
+      />
+
       <Navbar />
 
       <section className="hero_section w-[85%] mx-auto py-8 grid md:grid-cols-2 gap-16 items-center">

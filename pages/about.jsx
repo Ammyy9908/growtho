@@ -3,6 +3,7 @@ import { BsFacebook } from "react-icons/bs";
 import Footer from "@/components/footer";
 import { FaTwitter } from "react-icons/fa";
 import Link from "next/link";
+import { NextSeo } from "next-seo";
 function WorkStatCard() {
   return (
     <div className="work-stat-card flex items-center gap-6">
@@ -63,6 +64,25 @@ function LocationCard() {
 export default function Home() {
   return (
     <main className="w-full h-screen">
+      <NextSeo
+        title="About GrowthO: Your Partner in Digital Excellence and Collaborative Growth"
+        description="Hey there! 🌟 Meet Growth O, your friendly neighborhood digital marketing agency where your growth is our motto. Dive into our story and find out how our super talented team is helping businesses just like yours bloom online and offline. Come, be a part of this exciting journey where dreams take flight, and growth knows no bounds. Let's grow together!"
+        openGraph={{
+          title:
+            "About Growth O: Your Partner in Digital Excellence and Collaborative Growth",
+          description:
+            "Hey there! 🌟 Meet Growth O, your friendly neighborhood digital marketing agency where your growth is our motto. Dive into our story and find out how our super talented team is helping businesses just like yours bloom online and offline. Come, be a part of this exciting journey where dreams take flight, and growth knows no bounds. Let's grow together!",
+          url: "https://www.growtho.co/about",
+          images: [
+            {
+              url: "/Ayush.jpeg",
+              width: 800,
+              height: 600,
+              alt: "About GrowthO",
+            },
+          ],
+        }}
+      />
       <Navbar />
 
       <section
