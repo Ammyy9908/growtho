@@ -1,11 +1,9 @@
-import FAQ from "@/components/FAQ";
-import Newsletter from "@/components/Newsletter/Newsletter";
 import Popup from "@/components/Popup";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import axios from "axios";
 import React, { useState } from "react";
-import { AiFillMail } from "react-icons/ai";
+import { NextSeo } from "next-seo";
 
 function FormControl({ label, type, value, setValue, placeholder, name, id }) {
   return (
@@ -80,7 +78,25 @@ function Contact() {
     }
   };
   return (
-    <div className="w-full h-screen">
+    <main className="w-full h-screen">
+      <NextSeo
+        title="Contact GrowthO - Let's Drive Digital Success Together"
+        description="Reach out to GrowthO for all your digital aspirations. Whether it's a project idea, a question, or just a chat about the digital landscape, we're here to connect and collaborate. Your journey to growth starts with a conversation."
+        openGraph={{
+          title: "Contact GrowthO - Let's Drive Digital Success Together",
+          description:
+            "Reach out to GrowthO for all your digital aspirations. Whether it's a project idea, a question, or just a chat about the digital landscape, we're here to connect and collaborate. Your journey to growth starts with a conversation.",
+          url: "https://www.growtho.in/contact",
+          images: [
+            {
+              url: "/brand-logo.jpeg.jpg",
+              width: 800,
+              height: 600,
+              alt: "GrwothO Digital Marketing",
+            },
+          ],
+        }}
+      />
       <Navbar />
       <section className="hero_section w-[85%] mx-auto pt-8 grid md:grid-cols-2 gap-16 items-center">
         <div className="hero-section-content flex flex-col items-start gap-6">
@@ -226,7 +242,7 @@ function Contact() {
       {/* <FAQ /> */}
       <Footer />
       {sented && <Popup setSented={setSented} />}
-    </div>
+    </main>
   );
 }
 

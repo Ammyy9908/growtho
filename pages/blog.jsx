@@ -52,10 +52,10 @@ function Blog() {
           title: "Digital Marketing Insights and Tips - Growtho Blogs",
           description:
             "Dive deep into the world of digital marketing with Growtho Blogs. From the latest trends to actionable insights, our blog posts are crafted to equip you with the knowledge to steer your business to success. Stay ahead in the game with expert advice and tips from the Growtho team, your trusted partner in digital growth.",
-          url: "https://www.growtho.co/blogs",
+          url: "https://www.growtho.in/blogs",
           images: [
             {
-              url: "/31958-1-scaled.jpg",
+              url: "/brand-logo.jpeg",
               width: 800,
               height: 600,
               alt: "GrwothO Digital Marketing",

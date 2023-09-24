@@ -40,27 +40,6 @@ function TeamCard({ image, name, position }) {
   );
 }
 
-function LocationCard() {
-  return (
-    <div className="location-card rounded-md bg-white py-6 px-6 group hover:scale-110 transition-all cursor-pointer hover:shadow-2xl">
-      <div className="location-card-content">
-        <div className="location-card-flag"></div>
-        <div className="location-card-content">
-          <h3 className="text-xl font-semibold">San Francisco, USA</h3>
-          <p>1650 Page. San Francisco, California(CA), 94117</p>
-          <a href="#">
-            <span></span>
-            <span>(414) 809 - 2567</span>
-          </a>
-          <a href="#">
-            <span></span>
-            <span>Contact@marketingagency.com</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  );
-}
 export default function Home() {
   return (
     <main className="w-full h-screen">

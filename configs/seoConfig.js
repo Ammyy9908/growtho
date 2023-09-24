@@ -6,7 +6,7 @@ export default {
   openGraph: {
     type: "website",
     locale: "en_IE",
-    url: "https://www.myamazingwebsite.com/",
+    url: "https://www.growtho.in",
     site_name: "GrowthO",
   },
   twitter: {
