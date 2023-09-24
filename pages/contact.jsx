@@ -82,15 +82,23 @@ function Contact() {
   return (
     <div className="w-full h-screen">
       <Navbar />
-      <section className="hero-section flex items-center justify-center relative h-[275px] md:h-[575px] w-full bg-white">
-        {/* <h2 className="text-3xl md:text-6xl absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] font-semibold z-20">
-          Contact <span className="text-[#5956E8]">us</span>
-        </h2> */}
-        <img
-          src="/contact.png"
-          alt=""
-          className="w-full h-full  absolute inset-0"
-        />
+      <section className="hero_section w-[85%] mx-auto pt-8 grid md:grid-cols-2 gap-16 items-center">
+        <div className="hero-section-content flex flex-col items-start gap-6">
+          <h1 className="text-2xl md:text-4xl lg:text-6xl font-semibold">
+            Let`s Connect and Craft the Future
+            {/* <span className="text-[#5956E8]">marketing</span> agency */}
+          </h1>
+          <p>
+            Your thoughts, questions, and ideas matter to us. Whether you`re
+            ready to kickstart a project or just want to chat about
+            possibilities, we`re here to listen and guide. Reach out, and let`s
+            create something extraordinary together. Your digital journey starts
+            with this conversation.
+          </p>
+        </div>
+        <div className="flex hero-section-graphic">
+          <img src="/contact.svg" alt="" />
+        </div>
       </section>
       <section className="contact-section bg-white py-12 px-2 md:px-32">
         <div className="section-header my-16 flex flex-col items-center gap-6 ">
