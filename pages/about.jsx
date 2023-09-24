@@ -66,11 +66,11 @@ export default function Home() {
 
       <section className="hero_section w-[85%] mx-auto pt-8 grid md:grid-cols-2 gap-16 items-center">
         <div className="hero-section-content flex flex-col items-start gap-6">
-          <h1 className="text-2xl md:text-4xl lg:text-6xl font-semibold">
+          <h1 className="text-2xl md:text-4xl lg:text-7xl font-semibold">
             About us
             {/* <span className="text-[#5956E8]">marketing</span> agency */}
           </h1>
-          <p>
+          <p className="text-md md:text-xl">
             GrowthO has the best team of five people who are excellent and
             absolutely flawless in their respective fields, have different
             outlooks and abilities, and are at different stages of their
@@ -146,9 +146,9 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section className="team-section mb-4">
+      <section className="team-section mb-4 mt-12">
         <div className="section-header w-[85%] mx-auto flex flex-col items-center my-8 gap-6">
-          <p>OUR TEAM</p>
+          <p className="text-3xl font-bold">OUR TEAM</p>
         </div>
         <div className="team-card-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 w-[85%] mx-auto">
           <TeamCard

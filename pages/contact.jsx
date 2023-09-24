@@ -100,11 +100,11 @@ function Contact() {
       <Navbar />
       <section className="hero_section w-[85%] mx-auto pt-8 grid md:grid-cols-2 gap-16 items-center">
         <div className="hero-section-content flex flex-col items-start gap-6">
-          <h1 className="text-2xl md:text-4xl lg:text-6xl font-semibold">
+          <h1 className="text-2xl md:text-4xl lg:text-7xl font-semibold">
             Let`s Connect and Craft the Future
             {/* <span className="text-[#5956E8]">marketing</span> agency */}
           </h1>
-          <p>
+          <p className="text-md md:text-xl">
             Your thoughts, questions, and ideas matter to us. Whether you`re
             ready to kickstart a project or just want to chat about
             possibilities, we`re here to listen and guide. Reach out, and let`s

@@ -7,19 +7,27 @@ function Navbar() {
       <Link href="/" className="text-xl md:text-3xl font-bold">
         <img src="/brand-logo.jpeg" alt="GrowthO" className="w-[210px]" />
       </Link>
-      <nav className="hidden md:block">
+      <nav className="hidden lg:block">
         <ul className="flex items-center justify-start gap-12">
           <li>
-            <Link href="/">Home</Link>
+            <Link href="/" className="text-lg font-bold">
+              Home
+            </Link>
           </li>
           <li>
-            <Link href="/services">Our Services</Link>
+            <Link href="/services" className="text-lg font-bold">
+              Our Services
+            </Link>
           </li>
           <li>
-            <Link href="/about">About Us</Link>
+            <Link href="/about" className="text-lg font-bold">
+              About Us
+            </Link>
           </li>
           <li>
-            <Link href="/blog">Blogs</Link>
+            <Link href="/blog" className="text-lg font-bold">
+              Blogs
+            </Link>
           </li>
 
           <li>
@@ -33,7 +41,7 @@ function Navbar() {
         </ul>
       </nav>
       <button
-        className="md:hidden menu-btn w-8 h-8 flex items-center justify-center relative group"
+        className="lg:hidden menu-btn w-8 h-8 flex items-center justify-center relative group"
         tabIndex={1}
       >
         <HiMenu />

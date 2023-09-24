@@ -10,11 +10,11 @@ function Services() {
 
       <section className="hero_section w-[85%] mx-auto pt-8 grid md:grid-cols-2 gap-16 items-center">
         <div className="hero-section-content flex flex-col items-start gap-6">
-          <h1 className="text-2xl md:text-4xl lg:text-6xl font-semibold">
+          <h1 className="text-2xl md:text-4xl lg:text-7xl font-semibold">
             Our Services
             {/* <span className="text-[#5956E8]">marketing</span> agency */}
           </h1>
-          <p>
+          <p className="text-md md:text-xl">
             Discover a suite of digital solutions crafted with precision to meet
             your unique needs. From innovative marketing strategies to
             cutting-edge web design, we empower your brand to shine in the

@@ -66,11 +66,11 @@ function Blog() {
       <Navbar />
       <section className="hero_section w-[85%] mx-auto pt-8 grid md:grid-cols-2 gap-16 items-center">
         <div className="hero-section-content flex flex-col items-start gap-6">
-          <h1 className="text-2xl md:text-4xl lg:text-6xl font-semibold">
+          <h1 className="text-2xl md:text-4xl lg:text-7xl font-semibold">
             Blogs
             {/* <span className="text-[#5956E8]">marketing</span> agency */}
           </h1>
-          <p>
+          <p className="text-md md:text-xl">
             Welcome to our Digital Insights Blog! Dive deep into the
             ever-evolving world of digital marketing with us. From the latest
             trends in social media marketing to the nuances of SEO, our expert

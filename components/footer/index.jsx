@@ -1,5 +1,11 @@
 import Link from "next/link";
 import React from "react";
+import {
+  FaFacebook,
+  FaInstagramSquare,
+  FaLinkedin,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 function Footer() {
   return (
@@ -23,6 +29,28 @@ function Footer() {
               <a href="mailto:contactgrowtho@gmail.com">
                 <p>contactgrowtho@gmail.com</p>
               </a>
+              <ul className="flex items-center justify-start gap-4">
+                <li>
+                  <a href="#" className="text-2xl">
+                    <FaFacebook />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-2xl">
+                    <FaLinkedin />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-2xl">
+                    <FaInstagramSquare />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-2xl">
+                    <FaWhatsapp />
+                  </a>
+                </li>
+              </ul>
             </div>
             <div className="address-box-2">
               <div className="address-header flex items-center gap-3">
@@ -31,9 +59,9 @@ function Footer() {
                 </span>
                 <span>Locations</span>
               </div>
-              <p className="mt-3">Mathura,Uttar Pradesh</p>
-              <p className="mt-3">Pune,Maharastra</p>
-              <p className="mt-3">Mehsana,Gujarat</p>
+              <p className="mt-3">Mathura, Uttar Pradesh</p>
+              <p className="mt-3">Pune, Maharastra</p>
+              <p className="mt-3">Mehsana, Gujarat</p>
             </div>
 
             <div className="site-pages">
@@ -44,6 +72,9 @@ function Footer() {
                 <ul>
                   <li>
                     <Link href="/">Home</Link>
+                  </li>
+                  <li>
+                    <Link href="/services">Our Services</Link>
                   </li>
                   <li>
                     <Link href="/about">about</Link>
