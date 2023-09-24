@@ -13,14 +13,15 @@ function Navbar() {
             <Link href="/">Home</Link>
           </li>
           <li>
+            <Link href="/services">Our Services</Link>
+          </li>
+          <li>
             <Link href="/about">About Us</Link>
           </li>
           <li>
             <Link href="/blog">Blogs</Link>
           </li>
-          <li>
-            <Link href="/services">Our Services</Link>
-          </li>
+
           <li>
             <Link
               href="/contact"
@@ -37,7 +38,7 @@ function Navbar() {
       >
         <HiMenu />
         <div
-          className="mobile-nav min-w-[170px] bg-white px-3 py-6 bg-whiite shadow-md absolute z-50 right-6 top-5 rounded-md scale-0 group-focus:scale-100 transition-all"
+          className="mobile-nav min-w-[170px] bg-white px-3 py-6 bg-whiite shadow-md absolute z-50 right-6 top-5 rounded-md scale-0 group-hover:scale-100 transition-all"
           style={{
             transformOrigin: "top right",
           }}
@@ -46,6 +47,11 @@ function Navbar() {
             <li>
               <Link href="/" className="font-bold">
                 Home
+              </Link>
+            </li>
+            <li>
+              <Link href="/services" className="font-bold">
+                Our Services
               </Link>
             </li>
             <li>
@@ -58,11 +64,7 @@ function Navbar() {
                 Blogs
               </Link>
             </li>
-            <li>
-              <Link href="/services" className="font-bold">
-                Our Services
-              </Link>
-            </li>
+
             <li>
               <Link href="/contact" className="font-bold">
                 Contact

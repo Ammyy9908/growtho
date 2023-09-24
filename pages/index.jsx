@@ -251,7 +251,7 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="video-testimonials w-[85%] mx-auto py-12">
+      {/* <section className="video-testimonials w-[85%] mx-auto py-12">
         <h2 className="text-center text-2xl font-semibold">
           Listen from our Clients
         </h2>
@@ -261,7 +261,7 @@ export default function Home() {
           <VideoTestimonial source="/videos/2.mp4" />
           <VideoTestimonial source="/videos/3.mp4" />
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </main>
