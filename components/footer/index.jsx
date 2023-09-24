@@ -31,22 +31,31 @@ function Footer() {
               </a>
               <ul className="flex items-center justify-start gap-4">
                 <li>
-                  <a href="#" className="text-2xl">
+                  <a
+                    href="https://www.facebook.com/growtho/"
+                    className="text-2xl"
+                  >
                     <FaFacebook />
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-2xl">
+                  <a
+                    href="https://www.linkedin.com/company/growtho/"
+                    className="text-2xl"
+                  >
                     <FaLinkedin />
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-2xl">
+                  <a
+                    href="https://instagram.com/growtho.in?igshid=MzRlODBiNWFlZA=="
+                    className="text-2xl"
+                  >
                     <FaInstagramSquare />
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-2xl">
+                  <a href="https://wa.me/917339991461" className="text-2xl">
                     <FaWhatsapp />
                   </a>
                 </li>
