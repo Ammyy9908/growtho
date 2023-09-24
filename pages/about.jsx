@@ -85,17 +85,26 @@ export default function Home() {
       />
       <Navbar />
 
-      <section
-        className="hero-section flex items-center justify-center  h-[275px]  sm:h-[375px] md:h-[575px] w-full bg-[rgb(233,222,254)] relative "
-        style={{
-          background: `linear-gradient(122deg, rgba(233,222,254,1) 0%, rgba(206,249,242,1) 97%)`,
-        }}
-      >
-        <img
-          src="/about.png"
-          alt=""
-          className="w-full h-full   absolute inset-0"
-        />
+      <section className="hero_section w-[85%] mx-auto pt-8 grid md:grid-cols-2 gap-16 items-center">
+        <div className="hero-section-content flex flex-col items-start gap-6">
+          <h1 className="text-2xl md:text-4xl lg:text-6xl font-semibold">
+            About us
+            {/* <span className="text-[#5956E8]">marketing</span> agency */}
+          </h1>
+          <p>
+            GrowthO has the best team of five people who are excellent and
+            absolutely flawless in their respective fields, have different
+            outlooks and abilities, and are at different stages of their
+            careers. Conjoined efforts of each team member has led to favourable
+            outcomes in such a short span of time. Since, GrowthO has made it’s
+            principal grail towards it’s team members is amiable, motivating,
+            engaging each individuals. Even a small initiative by a team member
+            is seeing as a new opportunity for GrowthO to make it best.
+          </p>
+        </div>
+        <div className="flex hero-section-graphic">
+          <img src="/about.svg" alt="" />
+        </div>
       </section>
 
       {/* <section className="work-stats py-32 xl:px-32 bg-black z-50">
@@ -107,10 +116,10 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section className="about-section w-full py-4">
+      {/* <section className="about-section w-full py-4">
         <div className="about-section-box w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-16 items-center">
           <div className="about-section-image">
-            <img src="/about.svg" alt="about" />
+            <img src="/about_service.svg" alt="about" />
           </div>
           <div className="about-section-content">
             <div className="about-section-header flex flex-col items-center md:flex-row md:items-start gap-6 py-6">
@@ -156,7 +165,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="team-section mb-4">
         <div className="section-header w-[85%] mx-auto flex flex-col items-center my-8 gap-6">

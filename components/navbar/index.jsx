@@ -24,7 +24,7 @@ function Navbar() {
           <li>
             <Link
               href="/contact"
-              className="contact bg-[#292930] px-3 py-3 text-white rounded-md shadow-xl"
+              className="contact bg-[#292930] px-3 py-3 text-white rounded-md shadow-xl hover:scale-90"
             >
               Contact Us
             </Link>
